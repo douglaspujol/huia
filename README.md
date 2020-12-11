@@ -2,8 +2,7 @@
 Este projeto foi desenvolvido para o teste técnico da empresa Huia.
 ### Principais tecnologias utilizadas:
  - ReactJS
- - GraphQL
- - Redux
+ - React Router Dom
  - Styled Components
  ### Primeiro Passo
  Baixe o repositório em sua máquina utilizando o comando

@@ -1,9 +1,14 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import { Link } from 'react-router-dom';
+import { Container } from './styles';
 
 function Main() {
-  return <h1>Main</h1>;
+  return (
+    <Container>
+      <h2>Avaliação de Douglas Pujol</h2>
+      <Link to="/maxdoctor">Acessar MaxDoctor</Link>
+    </Container>
+  );
 }
 
 export default Main;

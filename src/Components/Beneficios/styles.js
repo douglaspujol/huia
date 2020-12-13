@@ -9,6 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   div.primeiro {
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
     div {
@@ -23,23 +24,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  div {
     width: 100%;
-    margin: 10px 0;
-    div {
-      height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-      img {
-        max-width: 60px;
-      }
-      p {
-        margin-top: 4px;
-        text-align: center;
-      }
-    }
+    margin: 15px 0;
   }
 `;

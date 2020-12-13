@@ -5,39 +5,19 @@ import Caminhao from '../../assets/caminhao.svg';
 import Moto from '../../assets/moto.svg';
 import Sofa from '../../assets/sofa.svg';
 import { Container } from './styles';
+import Icones from './Icones/Icones';
 
 function Beneficios() {
   return (
     <Container>
       <div className="primeiro">
-        <div>
-          <img src={Carrinho} alt="" />
-          <p>
-            FACILIDADE
-            <br /> DE COMPRA
-          </p>
-        </div>
-        <div>
-          <img src={Limitada} alt="" />
-          <p>
-            QUANTIDADE
-            <br /> NÃO LIMITADA
-          </p>
-        </div>
+        <Icones src={Carrinho} text="FACILIDADE DE COMPRA" />
+        <Icones src={Limitada} text="QUANTIDADE NÃO LIMITADA" />
       </div>
       <div className="segundo">
-        <div>
-          <img src={Caminhao} alt="" />
-          <p>FRETE GRÁTIS</p>
-        </div>
-        <div>
-          <img src={Moto} alt="" />
-          <p>AGILIDADE</p>
-        </div>
-        <div>
-          <img src={Sofa} alt="" />
-          <p>COMODIDADE</p>
-        </div>
+        <Icones src={Caminhao} text="FRETE GRÁTIS" />
+        <Icones src={Moto} text="AGILIDADE" />
+        <Icones src={Sofa} text="COMODIDADE" />
       </div>
     </Container>
   );

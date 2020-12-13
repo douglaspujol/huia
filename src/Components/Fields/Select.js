@@ -16,11 +16,12 @@ function Select({ id, label, value, onChange, error, onBlur, options }) {
           <option value="" disabled>
             Selecione
           </option>
-          {options.map(option => (
-            <option key={option.value} value={option.value}>
-              {option.option}
-            </option>
-          ))}
+          {options &&
+            options.map(option => (
+              <option key={option.id} value={option.sigla}>
+                {option.nome}
+              </option>
+            ))}
         </select>
       </label>
       {error && <span>{error}</span>}
@@ -30,7 +31,10 @@ function Select({ id, label, value, onChange, error, onBlur, options }) {
 
 Select.propTypes = {
   error: PropTypes.string,
-  options: PropTypes.arrayOf().isRequired,
+  options: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.object),
+    PropTypes.bool,
+  ]).isRequired,
   value: PropTypes.string,
   label: PropTypes.string,
   id: PropTypes.string.isRequired,

@@ -46,7 +46,7 @@ function FormLogin() {
         </button>
       </form>
       <span>
-        CANAL DE COMRPA EXCLUSIVO <br />
+        CANAL DE COMPRA EXCLUSIVO <br />
         PARA CLASSE MÉDICA
       </span>
     </Container>

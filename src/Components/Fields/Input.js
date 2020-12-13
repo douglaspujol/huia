@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Error from '../Error/index';
 
 function Input({ id, label, placeholder, value, onChange, error, onBlur }) {
   return (
@@ -15,7 +16,7 @@ function Input({ id, label, placeholder, value, onChange, error, onBlur }) {
           onBlur={onBlur}
         />
       </label>
-      {error && <span>{error}</span>}
+      {error && <Error message={error} />}
     </>
   );
 }
